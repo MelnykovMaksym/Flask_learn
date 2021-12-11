@@ -1,0 +1,24 @@
+{% extends "source.html" %}
+
+{% block title %}
+View data
+{% endblock %}
+
+{% block body %}
+
+<div class="container nt-5p">
+    <h4>There are all data ordered by date</h4>
+    {% if show_info | length >0 %}
+        {% for el in show_info %}
+        <div class="alert alert-info">
+            <h5>{{ el.second_name }}</h5>
+            <p>{{ el.phone }}</p>
+            <p><b>Posted Date: {{ el.date.date() }}</b></p>
+            <a href="/view/{{ el.id }}" class="btn btn-warning">More details</a>
+        </div>
+        {% endfor %}
+    {% else %}
+    <p>No added info yet</p>
+    {% endif %}
+</div>
+{% endblock %}

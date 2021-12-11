@@ -1,0 +1,24 @@
+{% extends "source.html" %}
+
+{% block title %}
+Update data
+{% endblock %}
+
+{% block body %}
+<div class="container nt-5">
+    <h4>Update data</h4>
+    <form method="post">
+        <input type="text" name="first_name" id="first_name" class="form-control"
+               value="{{ contacts.first_name }}" placeholder="first name"><br>
+        <input type="text" name="second_name" id="second_name" class="form-control"
+               value="{{ contacts.second_name }}" placeholder="second name"><br>
+        <input type="text" name="phone" id="phone" class="form-control"
+               value="{{ contacts.phone }}" placeholder="phone"><br>
+        <input type="text" name="email" id="email" class="form-control"
+               value="{{ contacts.email }}" placeholder="email"><br>
+        <input type="submit" class="btn btn-success" value="Update">
+    </form>
+
+
+
+{% endblock %}

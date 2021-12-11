@@ -1,0 +1,24 @@
+{% extends "source.html" %}
+
+{% block title %}
+{{ show_info_details.second_name }}
+{% endblock %}
+
+{% block body %}
+
+<div class="container nt-5p">
+
+
+    <div class="alert alert-info">
+        <h5>{{ show_info_details.second_name }}</h5>
+        <p>{{ show_info_details.first_name }}</p>
+        <p>{{ show_info_details.email }}</p>
+        <p>{{ show_info_details.phone }}</p>
+        <p><b>Posted Date: {{ show_info_details.date.date() }}</b></p>
+        <a href="/view/{{ show_info_details.id }}/del" class="btn btn-danger">Delete</a>
+        <a href="/view/{{ show_info_details.id }}/view_update" class="btn btn-success">Update</a>
+    </div>
+
+
+</div>
+{% endblock %}
