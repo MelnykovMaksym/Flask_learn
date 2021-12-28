@@ -1,4 +1,4 @@
-[[source]]
+зшзутм ырудд[[source]]
 url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
@@ -7,6 +7,8 @@ name = "pypi"
 youtube3 = "*"
 vk7 = "*"
 flask = "*"
+aiohttp = "*"
+requests = "*"
 
 [dev-packages]
 
